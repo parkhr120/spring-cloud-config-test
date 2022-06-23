@@ -1,0 +1,17 @@
+token:
+  expiration_time: 86400000
+  secret: my_token_user_service
+  
+gateway:
+  ip: 172.20.0.211
+
+spring:
+ datasource:
+   driver-class-name: org.h2.Driver
+   url: jdbc:h2:mem:testdb
+   username: '{cipher}AQCjFnec3z2PdI51egRtAzI9QiC3ZS8NBiCsRTpErmiLc3tXCjEtp63SLkfbXoppB+AcT0E7ddaG6U0Ab9v/tBx0YmCnS2WgcaZxAeNGCnpMFqDSfHCI+CCDMpL1Aj7OR6Wda/is4rXPP40meo72tKZn0pldE+QM2WQxRuFbsUaTs0shpySLDrJAJyNRCE9DKdeHxNcc7wgFSwDWfVdaoHf5qd74/T2zUhgfoWd41eGLafcOUuUGEk/ivqs7IVIAEk+IrKG/X4g+09ISWudDJ+J6T56EogP1Cd1C2kL8DgnCKJaKW4AHTVmo9MCYZ9Us2w/mk4+4BDzLeHozbAUmaar0qtEUtHg3/urCDgvHprkag21ntj1Motck2Mq/SBdKaKE='
+
+order_service:
+  url: http://ORDER-SERVICE/order-service/%s/orders
+  exception:
+    orders_is_empty: 사용자가 주문한게 없음
