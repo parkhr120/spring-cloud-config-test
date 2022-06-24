@@ -3,7 +3,7 @@ token:
   secret: my_token_user_service
   
 gateway:
-  ip: 172.20.0.211
+  ip: 172.18.0.5
 
 spring:
  datasource:
